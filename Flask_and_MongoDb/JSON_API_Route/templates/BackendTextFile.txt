@@ -1,6 +1,6 @@
 {
     "glossary": {
-        "title": "example glossary",
+        "title": "Changed JSON",
 		"GlossDiv": {
             "title": "S",
 			"GlossList": {
