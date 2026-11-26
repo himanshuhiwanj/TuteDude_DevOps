@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+    <style>
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Add a task</h1>
+        <p>Enter a task and a short description to save it.</p>
+        <form action="/api/tasks" method="post">
+            <label for="task-name">Task name</label>
+            <input id="task-name" name="task_name" type="text" maxlength="200" required>
+
+            <label for="task-description">Description</label>
+            <textarea id="task-description" name="task_description" maxlength="2000" required></textarea>
+
+            <button type="submit">Save task</button>
+            <p id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+    </main>
+    <script src="/form.js" defer></script>
+</body>
+</html>
